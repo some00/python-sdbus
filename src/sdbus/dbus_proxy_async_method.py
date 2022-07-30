@@ -181,7 +181,7 @@ class DbusMethodAsyncBinded(DbusBindedAsync):
                 "",
             )
             error_message.send()
-            return
+            raise
 
         if not request_message.expect_reply:
             return
